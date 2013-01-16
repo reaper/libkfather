@@ -24,6 +24,7 @@ if sys.platform.startswith('win32'):
 
 else:
     libraries.append('iconvplus')
+    libraries.append('iconv')
 
 libraries.append('boost_system')
 
