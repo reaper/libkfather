@@ -23,10 +23,9 @@ if sys.platform.startswith('win32'):
     libraries.append('iconv')
 
 else:
-    libraries.append('iconv')
     libraries.append('iconvplus')
 
-libraries.append('boost_system' + os.environ['FREELAN_BOOST_SUFFIX'])
+libraries.append('boost_system')
 
 project = LibraryProject(Dir('.'), name, major, minor, libraries, Glob('src/*.cpp'))
 
